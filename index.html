@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio Putri Aulia, mahasiswa Sistem Informasi.">
+
+    <title>Putri Aulia | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT ASLI: TIDAK DIUBAH -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon-putri.png">
+</head>
+
+<body>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- OPENING SCREEN -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+            <p>WELCOME TO MY PERSONAL WEBSITE</p>
+            <h1>Putri Aulia Oktaviani<span></span></h1>
+            <div class="intro-line"></div>
+            <small>A LITTLE SPACE ABOUT ME</small>
+
+            <button class="enter-button" id="enterWebsite">
+                Enter Website <span>↗</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">Putri<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"
+                    aria-label="Ganti tema">☾</button>
+
+                <button class="menu-toggle" id="menuToggle"
+                    aria-label="Buka menu">☰</button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <p class="subtitle">HELLO, WELCOME TO MY WEBSITE</p>
+
+                <h1>I'm <span>Putri Aulia Oktaviani</span></h1>
+
+                <h2>
+                    I'm a <span id="typingText"></span><span class="typing-cursor">|</span>
+                </h2>
+
+                <p class="description">
+                    Pribadi yang disiplin, komunikatif, dan memiliki
+                    semangat untuk terus belajar serta mengembangkan diri.
+                    Senang menghadapi tantangan baru dan menciptakan
+                    pengalaman yang bermakna.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-primary">Explore More ↗</a>
+                    <a href="cv.pdf" download class="btn-secondary">Download CV ↓</a>
+                </div>
+
+                <div class="social-text">
+                    LET'S GET TO KNOW EACH OTHER
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="image-decoration"></div>
+
+                <div class="image-frame">
+                    <img src="images/profile.jpg" alt="Foto profil Putri Aulia">
+                </div>
+
+                <div class="floating-note">
+                    <span>♡</span> Always Growing
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+
+            <div class="section-heading reveal">
+                <p class="subtitle">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+                <p>A little introduction about myself.</p>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-card reveal">
+                    <h3>A Little About Me</h3>
+
+                    <p>
+                        Saya merupakan lulusan SMA At-Tawazun dengan
+                        predikat Peringkat Terbaik Kategori Akademik.
+                        Saat ini saya sedang menempuh pendidikan
+                        di bidang Sistem Informasi Universitas Mandiri.
+                    </p>
+
+                    <p>
+                        Memiliki pengalaman sebagai Ketua OSIS selama
+                        SMP dan SMA serta Sales Executive di MyRepublic
+                        (Sinarmas Group). Pengalaman tersebut membantu
+                        saya mengembangkan kemampuan komunikasi,
+                        kepemimpinan, koordinasi, dan kerja sama tim.
+                    </p>
+
+                    <p>
+                        Saya percaya bahwa proses belajar dan pengalaman
+                        merupakan bagian penting dalam mengembangkan
+                        potensi diri.
+                    </p>
+                </div>
+
+                <div class="about-details reveal">
+
+                    <div class="detail-item">
+                        <span>01</span>
+                        <div>
+                            <h4>Leadership</h4>
+                            <p>Memiliki pengalaman memimpin organisasi.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>02</span>
+                        <div>
+                            <h4>Communication</h4>
+                            <p>Mampu berkomunikasi dan berinteraksi dengan baik.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>03</span>
+                        <div>
+                            <h4>Continuous Learning</h4>
+                            <p>Memiliki semangat untuk terus belajar.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+        <section class="section achievements">
+
+            <div class="section-heading reveal">
+                <p class="subtitle">MY JOURNEY SO FAR</p>
+                <h2>Personal <span>Highlights</span></h2>
+            </div>
+
+            <div class="achievement-grid">
+
+                <div class="achievement-card reveal">
+                    <h3 class="counter" data-target="2">0</h3>
+                    <p>Jenjang Pengalaman Ketua OSIS</p>
+                </div>
+
+                <div class="achievement-card reveal">
+                    <h3 class="counter" data-target="1">0</h3>
+                    <p>Tahun Pengalaman Sales Executive</p>
+                </div>
+
+                <div class="achievement-card reveal">
+                    <h3>01</h3>
+                    <p>Predikat Terbaik Kategori Akademik</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="section education" id="education">
+
+            <div class="section-heading reveal">
+                <p class="subtitle">MY BACKGROUND</p>
+                <h2>Education</h2>
+                <p>The journey of learning and growing.</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <span class="year">2026 – Present</span>
+                        <h3>Universitas Mandiri</h3>
+                        <h4>Program Studi Sistem Informasi</h4>
+
+                        <p>
+                            Sedang menempuh pendidikan tinggi dan
+                            mengembangkan pengetahuan di bidang
+                            teknologi informasi dan bisnis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <span class="year">2023 - 2025</span>
+                        <h3>SMA At-Tawazun</h3>
+                        <h4>Peringkat Terbaik Kategori Akademik</h4>
+
+                        <p>
+                            Aktif dalam organisasi dan kegiatan
+                            ekstrakurikuler, termasuk menjabat
+                            sebagai Ketua OSIS.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+<!-- EXPERIENCE SECTION -->
+<section class="section experience" id="experience">
+
+    <div class="section-heading reveal">
+        <p class="subtitle">MY JOURNEY</p>
+        <h2>Work & <span>Experience</span></h2>
+        <p>Some experiences that have shaped my professional journey.</p>
+    </div>
+
+    <div class="experience-grid">
+
+        <div class="experience-card reveal">
+            <span class="experience-number">01</span>
+            <h3>Sales Executive</h3>
+            <p class="experience-place">PT Sinarmas — MyRepublic</p>
+            <p>
+                Bertanggung jawab dalam menawarkan produk layanan
+                internet, membangun hubungan dengan pelanggan,
+                melakukan pemasaran, serta mencapai target penjualan
+                setiap bulan.
+            </p>
+        </div>
+
+        <div class="experience-card reveal">
+            <span class="experience-number">02</span>
+            <h3>Store Attendant</h3>
+            <p class="experience-place">Personal Store</p>
+            <p>
+                Melayani pelanggan, mengelola transaksi,
+                memeriksa persediaan barang, serta menjaga
+                kerapian dan kebersihan toko.
+            </p>
+        </div>
+
+        <div class="experience-card reveal">
+            <span class="experience-number">03</span>
+            <h3>Crew Wedding Organizer</h3>
+            <p class="experience-place">Antonio Wedding Organizer</p>
+            <p>
+                Membantu persiapan dan pelaksanaan acara pernikahan,
+                mengatur kebutuhan operasional selama acara berlangsung,
+                berkoordinasi dengan tim dan vendor, serta memastikan
+                rangkaian acara berjalan tertib sesuai susunan acara.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ORGANIZATIONAL & EXTRACURRICULAR SECTION -->
+<section class="section activities" id="activities">
+
+    <div class="section-heading reveal">
+        <p class="subtitle">BEYOND THE CLASSROOM</p>
+        <h2>Organizational & <span>Activities</span></h2>
+        <p>
+            Experiences that helped me develop leadership,
+            discipline, and teamwork.
+        </p>
+    </div>
+
+    <div class="activities-grid">
+
+        <!-- OSIS -->
+        <div class="activity-card reveal">
+            <span class="activity-number">01</span>
+            <div class="activity-icon">✦</div>
+
+            <h3>Ketua OSIS</h3>
+            <p class="activity-label">SMP & SMA</p>
+
+            <p>
+                Memimpin organisasi siswa, mengoordinasikan
+                kegiatan sekolah, menjalankan program kerja,
+                serta mengembangkan kemampuan kepemimpinan
+                dan komunikasi.
+            </p>
+        </div>
+
+        <!-- PASKIBRAKA -->
+        <div class="activity-card reveal">
+            <span class="activity-number">02</span>
+            <div class="activity-icon">✦</div>
+
+            <h3>Paskibraka</h3>
+            <p class="activity-label">Kecamatan Kalijati</p>
+
+            <p>
+                Menjadi bagian dari anggota Paskibraka
+                Kecamatan Kalijati. Pengalaman ini melatih
+                kedisiplinan, tanggung jawab, kekompakan,
+                dan kerja sama tim.
+            </p>
+        </div>
+
+        <!-- PRAMUKA -->
+        <div class="activity-card reveal">
+            <span class="activity-number">03</span>
+            <div class="activity-icon">✦</div>
+
+            <h3>Pramuka</h3>
+            <p class="activity-label">School Extracurricular</p>
+
+            <p>
+                Mengikuti kegiatan kepramukaan yang
+                membentuk kemandirian, kedisiplinan,
+                kepemimpinan, dan rasa tanggung jawab.
+            </p>
+        </div>
+
+        <!-- SILAT -->
+        <div class="activity-card reveal">
+            <span class="activity-number">04</span>
+            <div class="activity-icon">✦</div>
+
+            <h3>Pencak Silat</h3>
+            <p class="activity-label">School Extracurricular</p>
+
+            <p>
+                Mengikuti kegiatan pencak silat untuk
+                melatih fokus, ketekunan, kedisiplinan,
+                serta kemampuan mengendalikan diri.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- SKILLS -->
+        <section class="section skills" id="skills">
+
+            <div class="section-heading reveal">
+                <p class="subtitle">WHAT I CAN DO</p>
+                <h2>My <span>Skills</span></h2>
+                <p>Skills and abilities that I continue to develop.</p>
+            </div>
+
+            <div class="skills-wrapper">
+
+                <!-- PROFESSIONAL -->
+                <div class="skill-category reveal">
+
+                    <div class="skill-category-title">
+                        <span class="skill-icon">✦</span>
+                        <h3>Professional Skills</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span>Leadership</span>
+                        <span>Communication</span>
+                        <span>Teamwork</span>
+                        <span>Public Speaking</span>
+                        <span>Coordination</span>
+                        <span>Time Management</span>
+                        <span>Problem Solving</span>
+                        <span>Adaptability</span>
+                        <span>Fast Learner</span>
+                        <span>Management</span>
+                        <span>Customer Service</span>
+                    </div>
+
+                </div>
+
+                <!-- LANGUAGE -->
+                <div class="skill-category reveal">
+
+                    <div class="skill-category-title">
+                        <span class="skill-icon">✦</span>
+                        <h3>Language Skills</h3>
+                    </div>
+
+                    <div class="language-card">
+                        <div>
+                            <h4>Bahasa Indonesia</h4>
+                            <p>Native / Fluent</p>
+                        </div>
+                        <span class="language-level">Native</span>
+                    </div>
+
+                    <div class="language-card">
+                        <div>
+                            <h4>English</h4>
+                            <p>English Communication</p>
+                        </div>
+                        <span class="language-level">Developing</span>
+                    </div>
+
+                </div>
+
+                <!-- TECHNICAL -->
+                <div class="skill-category reveal">
+
+                    <div class="skill-category-title">
+                        <span class="skill-icon">✦</span>
+                        <h3>Technical & Digital Skills</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Microsoft Word</span>
+                        <span>Microsoft Excel</span>
+                        <span>Microsoft PowerPoint</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- CERTIFICATES SECTION -->
+<section class="section certificates" id="certificates">
+
+    <div class="section-heading reveal">
+        <p class="subtitle">MY ACHIEVEMENTS</p>
+        <h2>Certificates & <span>Achievements</span></h2>
+        <p>A collection of my achievements and experiences.</p>
+    </div>
+
+    <div class="certificate-container">
+
+        <button class="certificate-arrow prev"
+                id="certificatePrev"
+                aria-label="Sertifikat sebelumnya">
+            &#8592;
+        </button>
+
+        <div class="certificate-slider" id="certificateSlider">
+
+            <!-- 01. PERINGKAT TERBAIK -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/01-peringkat-terbaik-akademik.jpg"
+                        aria-label="Lihat sertifikat Peringkat Terbaik Akademik">
+                    <img src="certificates/01-peringkat-terbaik-akademik.jpg"
+                         alt="Sertifikat Peringkat Terbaik Akademik SMA At-Tawazun">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">01</span>
+                    <h3>Peringkat Terbaik Akademik</h3>
+                    <p>SMA At-Tawazun · 2025</p>
+                </div>
+            </article>
+
+            <!-- 02. KETUA ISTAWA -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/02-ketua-istawa.jpg"
+                        aria-label="Lihat sertifikat Ketua ISTAWA">
+                    <img src="certificates/02-ketua-istawa.jpg"
+                         alt="Sertifikat Ketua ISTAWA Putri">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">02</span>
+                    <h3>Ketua ISTAWA Putri</h3>
+                    <p>Pondok Pesantren At-Tawazun · 2025</p>
+                </div>
+            </article>
+
+            <!-- 03. KETUA OSIS -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/03-ketua-osis.jpg"
+                        aria-label="Lihat sertifikat Ketua OSIS">
+                    <img src="certificates/03-ketua-osis.jpg"
+                         alt="Sertifikat Ketua OSIS SMP Negeri 1 Binong">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">03</span>
+                    <h3>Ketua OSIS</h3>
+                    <p>SMP Negeri 1 Binong · 2022</p>
+                </div>
+            </article>
+
+            <!-- 04. PASKIBRAKA -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/04-paskibraka.jpg"
+                        aria-label="Lihat sertifikat Paskibraka">
+                    <img src="certificates/04-paskibraka.jpg"
+                         alt="Sertifikat Anggota Paskibraka Kecamatan Kalijati">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">04</span>
+                    <h3>Anggota Paskibraka</h3>
+                    <p>Kecamatan Kalijati · 2023</p>
+                </div>
+            </article>
+
+            <!-- 05. O2SN -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/05-o2sn-silat.jpg"
+                        aria-label="Lihat sertifikat O2SN">
+                    <img src="certificates/05-o2sn-silat.jpg"
+                         alt="Sertifikat Juara 1 Silat Putri O2SN">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">05</span>
+                    <h3>Juara 1 Silat Putri</h3>
+                    <p>O2SN Kecamatan Binong · 2018</p>
+                </div>
+            </article>
+
+            <!-- 06. PENCAK SILAT KELAS B -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/06-pencak-silat-kelas-b.jpg"
+                        aria-label="Lihat sertifikat Pencak Silat Kelas B">
+                    <img src="certificates/06-pencak-silat-kelas-b.jpg"
+                         alt="Sertifikat Juara 2 Pencak Silat Kelas B Putri">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">06</span>
+                    <h3>Juara 2 Pencak Silat</h3>
+                    <p>Kelas B Putri · Satria Open 2019</p>
+                </div>
+            </article>
+
+            <!-- 07. PENCAK SILAT TUNGGAL -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/07-pencak-silat-tunggal.jpg"
+                        aria-label="Lihat sertifikat Pencak Silat Tunggal">
+                    <img src="certificates/07-pencak-silat-tunggal.jpg"
+                         alt="Sertifikat Juara 2 Pencak Silat Tunggal Putri">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">07</span>
+                    <h3>Juara 2 Pencak Silat</h3>
+                    <p>Kategori Tunggal Putri · 2019</p>
+                </div>
+            </article>
+
+            <!-- 08. GKN -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/08-gkn-pramuka.jpg"
+                        aria-label="Lihat sertifikat GKN">
+                    <img src="certificates/08-gkn-pramuka.jpg"
+                         alt="Sertifikat Peserta Lomba Jelajah Desa GKN">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">08</span>
+                    <h3>Peserta Lomba Jelajah Desa</h3>
+                    <p>Gebyar Kreativitas Nesle · 2019</p>
+                </div>
+            </article>
+
+            <!-- 09. MUSABAQAH -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/09-musabaqah-qiroatul-kutub.jpg"
+                        aria-label="Lihat sertifikat Musabaqah">
+                    <img src="certificates/09-musabaqah-qiroatul-kutub.jpg"
+                         alt="Sertifikat Juara 2 Musabaqoh Qiro’atil Kutub">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">09</span>
+                    <h3>Juara II Musabaqoh Qiro’atil Kutub</h3>
+                    <p>Pondok Pesantren At-Tawazun · 2024</p>
+                </div>
+            </article>
+
+            <!-- 10. PESANTREN RAMADHAN 2018 -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/10-pesantren-ramadhan-2018.jpg"
+                        aria-label="Lihat sertifikat Pesantren Ramadhan 2018">
+                    <img src="certificates/10-pesantren-ramadhan-2018.jpg"
+                         alt="Sertifikat Peserta Pesantren Ramadhan 2018">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">10</span>
+                    <h3>Pesantren Ramadhan</h3>
+                    <p>Pondok Pesantren Al-Hidayah · 2018</p>
+                </div>
+            </article>
+
+            <!-- 11. PESANTREN RAMADHAN 2019 -->
+            <article class="certificate-card">
+                <button class="certificate-preview"
+                        data-src="certificates/11-pesantren-ramadhan-2019.jpg"
+                        aria-label="Lihat sertifikat Pesantren Ramadhan 2019">
+                    <img src="certificates/11-pesantren-ramadhan-2019.jpg"
+                         alt="Sertifikat Peserta Pesantren Ramadhan 2019">
+                </button>
+                <div class="certificate-info">
+                    <span class="certificate-number">11</span>
+                    <h3>Pesantren Ramadhan</h3>
+                    <p>Pondok Pesantren Al-Hidayah · 2019</p>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="certificate-arrow next"
+                id="certificateNext"
+                aria-label="Sertifikat berikutnya">
+            &#8594;
+        </button>
+
+    </div>
+
+    <p class="certificate-hint">SCROLL OR SWIPE TO EXPLORE ↔</p>
+
+</section>
+
+<!-- CERTIFICATE PREVIEW MODAL -->
+<dialog class="certificate-modal" id="certificateModal">
+    <button class="certificate-modal-close"
+            id="certificateModalClose"
+            aria-label="Tutup sertifikat">
+        &times;
+    </button>
+
+    <img id="certificateModalImage" src="" alt="Pratinjau sertifikat">
+</dialog>
+
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+            <p class="eyebrow">LITTLE MOMENTS</p>
+            <h2>My <span>gallery.</span></h2>
+            <p>A few moments from my journey.</p>
+        </div>
+
+        <div class="gallery-wrapper">
+
+            <button class="gallery-btn prev" id="galleryPrev"
+                aria-label="Previous photos">←</button>
+
+            <div class="gallery-grid" id="gallerySlider">
+
+                <figure class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Gallery photo 1">
+                    <figcaption>Moments</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Gallery photo 2">
+                    <figcaption>Memories</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Gallery photo 3">
+                    <figcaption>Experiences</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Gallery photo 4">
+                    <figcaption>My Journey</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Gallery photo 5">
+                    <figcaption>Special Moments</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Gallery photo 6">
+                    <figcaption>Little Things</figcaption>
+                </figure>
+
+            </div>
+
+            <button class="gallery-btn next" id="galleryNext"
+                aria-label="Next photos">→</button>
+
+        </div>
+
+        <p class="gallery-hint">SCROLL OR SWIPE TO EXPLORE ↔</p>
+
+    </div>
+</section>
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+
+            <div class="section-heading reveal">
+                <p class="subtitle">LET'S CONNECT</p>
+                <h2>Get In <span>Touch</span></h2>
+
+                <p>
+                    Terbuka untuk kesempatan baru, kolaborasi,
+                    dan pengalaman yang bermanfaat.
+                </p>
+            </div>
+
+            <div class="contact-content reveal">
+
+                <a href="mailto:putriauliaoktaviani001@gmail.com" class="contact-link">
+                    Email Me ↗
+                </a>
+
+                <a href="https://www.instagram.com/putria.oo?dlrf=MTdyczkzdHliaWU5dw%3D%3D&utm_source=qr"
+                    target="_blank" rel="noopener noreferrer"
+                    class="contact-link">
+                    Instagram ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © <span id="year"></span> Putri Aulia Oktaviani.
+            All Rights Reserved.
+        </p>
+        <p>Designed with care ♡</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
