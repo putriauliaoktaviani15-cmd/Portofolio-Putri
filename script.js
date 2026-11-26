@@ -394,3 +394,34 @@ if (certificateModal) {
 
     });
 }
+
+/* MUSIC PLAYER */
+
+const backgroundMusic = document.getElementById("backgroundMusic");
+const musicToggle = document.getElementById("musicToggle");
+
+musicToggle.addEventListener("click", function () {
+
+    if (backgroundMusic.paused) {
+
+        backgroundMusic.play();
+
+        musicToggle.textContent = "Ⅱ";
+        musicToggle.setAttribute("aria-label", "Jeda musik");
+
+    } else {
+
+        backgroundMusic.pause();
+
+        musicToggle.textContent = "▶";
+        musicToggle.setAttribute("aria-label", "Putar musik");
+
+    }
+
+});
+
+backgroundMusic.addEventListener("ended", function () {
+
+    musicToggle.textContent = "▶";
+
+});
