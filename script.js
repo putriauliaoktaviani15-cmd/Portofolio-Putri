@@ -397,31 +397,27 @@ if (certificateModal) {
 
 /* MUSIC PLAYER */
 
-const backgroundMusic = document.getElementById("backgroundMusic");
-const musicToggle = document.getElementById("musicToggle");
+document.addEventListener("DOMContentLoaded", function () {
+    const backgroundMusic = document.getElementById("backgroundMusic");
+    const musicToggle = document.getElementById("musicToggle");
 
-musicToggle.addEventListener("click", function () {
-
-    if (backgroundMusic.paused) {
-
-        backgroundMusic.play();
-
-        musicToggle.textContent = "Ⅱ";
-        musicToggle.setAttribute("aria-label", "Jeda musik");
-
-    } else {
-
-        backgroundMusic.pause();
-
-        musicToggle.textContent = "▶";
-        musicToggle.setAttribute("aria-label", "Putar musik");
-
+    if (!backgroundMusic || !musicToggle) {
+        console.error("Elemen musik tidak ditemukan!");
+        return;
     }
 
-});
-
-backgroundMusic.addEventListener("ended", function () {
-
-    musicToggle.textContent = "▶";
-
+    musicToggle.addEventListener("click", function () {
+        if (backgroundMusic.paused) {
+            backgroundMusic.play()
+                .then(function () {
+                    musicToggle.textContent = "Ⅱ";
+                })
+                .catch(function (error) {
+                    console.error("Gagal memutar musik:", error);
+                });
+        } else {
+            backgroundMusic.pause();
+            musicToggle.textContent = "▶";
+        }
+    });
 });
